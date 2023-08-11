@@ -10,7 +10,7 @@
             
             else{
                 ans=root; 
-                root=root->left; //it means root is greater so we move leftwards 
+                root=root->left; //it means root is greater so we move leftwards and the last greater node will be the inorder successor
             }
         }
         
