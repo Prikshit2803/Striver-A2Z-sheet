@@ -40,7 +40,7 @@
             }
         }
         
-        return true; //no valid integer to add in entire grid hence sudoku complete
+        return true; //no valid integer to add in entire grid hence sudoku complete ...it is base case excuted when sudoku is filled
     }
     bool SolveSudoku(int grid[N][N])  
     { 
