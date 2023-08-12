@@ -21,10 +21,14 @@
               l++;
           }
           
-          ans=ans+temp; //it works even when arr[r]=0 and sum!=target as temp from previous value is stored 
+          ans=ans+temp; //when element os ven ,it means that if odd elements was before were k, now no longer k but r is even number means all previous subarrays could have formed with it
           
           r++;
       }
        
        return ans;
     }
+
+//76 68 92 23 82 95 91 89 42 79
+//k=4
+//look at '42' to understand temp
