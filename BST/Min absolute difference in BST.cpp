@@ -3,6 +3,7 @@
 //recursive inorder but without storing inorder in a vector as we only need previous elmenet 
     //in inorder (Sorted) manner
     //store the previous element everytime u move right(towards a bigger node)
+// Intuition : minimum difference would always be one among difference between consecutive elements in sorted array 
 
 Node * prev=NULL; 
     void inorder(Node * root, int &ans){
