@@ -1,3 +1,4 @@
+//find the element till which to rotate and make it's next to null,point last element to head and return element after the element to be rotated
 class Solution
 {
     public:
@@ -35,5 +36,34 @@ class Solution
        
        return st;
        
+    }
+};
+
+//another soln
+class Solution
+{
+    public:
+    //Function to rotate a linked list.
+    Node* rot(Node*curr,Node*last){
+        Node*head;
+        
+        last->next=curr;
+        head=curr->next;
+        curr->next=NULL;
+        
+        return head;
+    }
+    Node* rotate(Node* head, int k)
+    {
+        Node*last=head;
+        while(last->next!=NULL){
+            last=last->next;
+        }
+        for(int i=0;i<k;i++){
+            Node*temp=head;
+            head=rot(head,last);
+            last=temp;
+        }
+        return head;
     }
 };
